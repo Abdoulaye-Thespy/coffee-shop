@@ -6,10 +6,16 @@ import Navbar from './containers/Navbar';
 
 function App() {
   return (
-    <Routes>
+  <>
+    <Navbar />
+    <div className='container'>
+      <Routes>
       <Route exact path='/' element={<HomePage/>} />
       <Route exact path='/:id' element={<UserPage/>} />
     </Routes>
+    </div>
+  </>
+
   );
 }
 
