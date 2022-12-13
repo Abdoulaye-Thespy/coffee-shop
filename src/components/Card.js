@@ -1,10 +1,11 @@
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Coffee from '../img/coffee-2.jpg'
 
 function KitchenSinkExample() {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Img variant="top" src={Coffee} />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -14,12 +15,10 @@ function KitchenSinkExample() {
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Card.Link href="#">Details</Card.Link>
+        <Card.Link href="#">Place Order</Card.Link>
       </Card.Body>
     </Card>
   );
