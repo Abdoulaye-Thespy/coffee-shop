@@ -4,14 +4,18 @@ import HomePage from './pages/HomePage';
 import UserPage from './pages/Details';
 import AboutUs from './pages/AboutUsPage';
 import Navbar from './containers/Navbar';
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+} from "@aws-amplify/ui-react";
 
-function App() {
+function App({user, signOut}) {
   return (
   <>
-    <Navbar />
+    <Navbar user={user} signOut={signOut} />
     <>
       <Routes>
-      <Route exact path='/' element={<HomePage/>} />
+      <Route exact path='/' element={<AboutUs/>} />
       <Route exact path='/aboutus' element={<AboutUs/>} />
       <Route exact path='/home' element={<HomePage/>} />
       <Route exact path='/:id' element={<UserPage/>} />
@@ -22,4 +26,5 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
+// export default App;
