@@ -21,7 +21,7 @@ export default function Music() {
             </div>
             <div align="center">
                 <h1 className='white-text music-text ' align='center'>
-                        CONTENT HERE, CONTENT HERE
+                        Coffee Shop, Coffee Shop, Coffee Shop
                 </h1>
                 <Button variant="outline-light" className='listen' align="center">Listen</Button>
             </div>
