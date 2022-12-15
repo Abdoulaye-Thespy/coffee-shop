@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import coffee from '../img/coffee-2.jpg'
+import coffee from '../img/burger.webp'
 
 export default function News() {
     return (
@@ -28,13 +28,6 @@ export default function News() {
               </div>
                
             </Col>
-         </Row>
-         <Row>
-             <Col>
-                <div align="center" className='button-about-me'>
-                    <a href='/about'><Button variant="outline-danger">Get In Touch</Button></a>
-                </div>
-             </Col>
          </Row>
       </Container>
      </>

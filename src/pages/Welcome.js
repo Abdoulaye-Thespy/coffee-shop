@@ -4,28 +4,19 @@ import Header from '../components/Headers';
 import Slides from '../containers/Caroussel'
 import News from '../containers/News';
 import Text from '../components/Text';
-import Row from 'react-bootstrap/esm/Row';
-import Col from 'react-bootstrap/esm/Col';
-import Container from 'react-bootstrap/esm/Container';
 
 export default function AboutMe() {
   return (
 
     <div className='body'>
-    <div className='slides-show'>
+    {/* <div className='slides-show'>
     <Slides />
     </div>
-    
-    <Header value='Our Shop'/>
+     */}
+    {/* <Header value='Our Shop'/> */}
     <News />
     <MyParallax />
-    <Text/>
-    <Container>
-     <Row>
-        <Col className='text-about-me'>
-        </Col>
-     </Row>
-    </Container>
+    <Text />
     
     </div>
   );

@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #292727 !important;
+  background-color: rgb(212, 207, 207) !important;
 }
 
 .App-logo {
@@ -73,7 +73,8 @@ body {
   border-radius: 5px;
 }
 
-.about-resume {
+.about-resume,
+.news-section {
   height: 100%;
   text-align: center;
   display: flex;
@@ -108,7 +109,6 @@ body {
 
 .glitch {
   text-align: center;
-  font-size: 5rem;
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 2px 4px #d50982;
@@ -197,6 +197,29 @@ body {
   object-fit: cover;
 }
 
-.slides-show {
-  margin-top: 0;
+.MyNav {
+  padding: 25px !important;
+}
+
+.btn-sign-out {
+  border: 1px solid #a34242;
+  border-radius: 4px;
+  max-width: 120px;
+  padding: 5px !important;
+
+}
+
+.shared-font {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.user-name {
+  text-align: left !important;
+  color: #a34242;
+}
+
+.user-name span {
+  color: #a34242;
+  margin-right: 15px
 }
