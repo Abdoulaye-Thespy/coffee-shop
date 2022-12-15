@@ -2,7 +2,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import { Button } from 'bootstrap';
 
 
 function CollapsibleExample({user, signOut}) {
@@ -14,7 +13,7 @@ function CollapsibleExample({user, signOut}) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/home">Menu</Nav.Link>
+            <Nav.Link href="/menu">Menu</Nav.Link>
             <Nav.Link href="/user">Pricing</Nav.Link>
           </Nav>
           <Nav>

@@ -16,7 +16,7 @@ export default function AboutMe() {
     <Slides />
     </div>
     
-    <Header value='About Us'/>
+    <Header value='Our Shop'/>
     <News />
     <MyParallax />
     <Text/>

@@ -9,7 +9,7 @@ export default function Music() {
     return (
      <>
        <Container className='news-section' >
-       <Header value="music" />
+       <Header value="Location" />
          <Row>
             <Col>
             <div className='music-picture-box'>

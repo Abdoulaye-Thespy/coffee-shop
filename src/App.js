@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import HomePage from './pages/HomePage';
-import UserPage from './pages/Details';
-import AboutUs from './pages/AboutUsPage';
+import Menu from './pages/Menu';
+import Details from './pages/Details';
+import Welcome from './pages/Welcome';
 import Navbar from './containers/Navbar';
 import "@aws-amplify/ui-react/styles.css";
 import {
@@ -15,10 +15,10 @@ function App({user, signOut}) {
     <Navbar user={user} signOut={signOut} />
     <>
       <Routes>
-      <Route exact path='/' element={<AboutUs/>} />
-      <Route exact path='/aboutus' element={<AboutUs/>} />
-      <Route exact path='/home' element={<HomePage/>} />
-      <Route exact path='/:id' element={<UserPage/>} />
+      <Route exact path='/' element={<Welcome/>} />
+      <Route exact path='/home' element={<Welcome/>} />
+      <Route exact path='/menu' element={<Menu/>} />
+      <Route exact path='/:id' element={<Details/>} />
     </Routes>
     </>
   </>
@@ -27,4 +27,3 @@ function App({user, signOut}) {
 }
 
 export default withAuthenticator(App);
-// export default App;
