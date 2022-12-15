@@ -16,6 +16,7 @@ function CollapsibleExample({user, signOut}) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
+          <Nav.Link href="/home" className='shared-font'>Home</Nav.Link>
             <Nav.Link href="/menu" className='shared-font'>Menu</Nav.Link>
             <Nav.Link href="/user" className='shared-font'>Pricing</Nav.Link>
           </Nav>
