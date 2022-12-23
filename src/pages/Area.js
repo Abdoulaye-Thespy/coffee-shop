@@ -13,12 +13,12 @@ export default function HomePage() {
    const [isLoading, setIsLoading] = useState(true)
    let url = useLocation().pathname; 
    let pathArray = url.split("/")
-   let path = pathArray[2]
+   let path = pathArray[3]
 
    useEffect( ()=>{
        let data=[];
        async function fetchData () {
-        data = await API.get('menu', `/menu/${path}`);
+        data = await API.get('menu', `/menu/area/${path}`);
         console.log(data)
         setMenu(data);
         setIsLoading(false);

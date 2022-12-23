@@ -23,6 +23,13 @@ const awsmobile = {
     },
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
+    ],
+    "aws_cloud_logic_custom": [
+        {
+            "name": "menu",
+            "endpoint": "https://rw6ys9wbf8.execute-api.us-east-1.amazonaws.com/staging",
+            "region": "us-east-1"
+        }
     ]
 };
 

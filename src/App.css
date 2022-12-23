@@ -230,6 +230,22 @@ body {
   border-radius: 5px;
 }
 
+.padding-for-mobile {
+  padding: 0 10px 0 10px !important;
+}
+
 .cta-text {
   font-size: 2px;
+}
+
+.iframe {
+  margin: 5px;
+}
+
+.about-resume ul {
+  list-style: none;
+}
+
+.about-resume ul li {
+  
 }

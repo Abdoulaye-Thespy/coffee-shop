@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Menu from './pages/Menu';
+import Area from './pages/Area';
 import Details from './pages/Details';
 import Welcome from './pages/Welcome';
 import Navbar from './containers/Navbar';
@@ -17,7 +18,8 @@ function App({user, signOut}) {
       <Routes>
       <Route exact path='/' element={<Welcome/>} />
       <Route exact path='/home' element={<Welcome/>} />
-      <Route exact path='/menu' element={<Menu/>} />
+      <Route exact path='/menu/:category' element={<Menu/>} />
+      <Route exact path='/menu/area/:area' element={<Area/>} />
       <Route exact path='/:id' element={<Details/>} />
     </Routes>
     </>

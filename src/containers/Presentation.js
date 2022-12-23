@@ -6,7 +6,7 @@ import cta from '../img/coffee-3.png'
 
 export default function Presentation() {
     return (
-     <Container>
+     <Container className='padding-for-mobile'>
          <Row  className='cta align-items-center' xs={1} md={1} lg={2}>
             <Col>
             <img
@@ -17,13 +17,13 @@ export default function Presentation() {
 
             </Col>
             <Col>
-            <p className='text-white cta-text shared-font' align="center">
+            <div className='text-white cta-text shared-font' align="center">
             Make your Rewards merrier
             CoffeeShop® Rewards + Delta SkyMiles® have come together! Link your accounts to get 1 mile per $1* spent at Starbucks.
             <br/>
             <hr/>
             <Button variant="light">Join US</Button>{' '}
-            </p>
+            </div>
             </Col>
 
          </Row>
@@ -31,3 +31,4 @@ export default function Presentation() {
     );
   }
   
+
