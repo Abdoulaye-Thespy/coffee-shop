@@ -33,3 +33,8 @@ export default function News({mykey, title, picture}) {
      </>
     );
 }
+
+News.defaultProps = {
+  picture: coffee,
+  title: "Who We Are"
+};
